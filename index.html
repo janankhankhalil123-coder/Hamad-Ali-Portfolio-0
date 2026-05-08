@@ -1,0 +1,526 @@
+export default function HamadAliPortfolio() { const commands = ['help', 'skills', 'projects', 'contact']; const whatsapp1 = "https://wa.me/923179518826"; const whatsapp2 = "https://wa.me/9233350955663";
+
+return ( <div className="min-h-screen bg-black text-white overflow-hidden font-sans cursor-none"> {/* Custom Cursor */} <div className="fixed top-10 left-10 w-8 h-8 rounded-full bg-cyan-400 blur-sm animate-pulse z-[9999]"></div>
+
+{/* Matrix Background */}
+  <div className="fixed inset-0 opacity-10 -z-20 overflow-hidden">
+    <div className="absolute inset-0 bg-[linear-gradient(rgba(0,255,255,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(0,255,255,0.15)_1px,transparent_1px)] bg-[size:40px_40px] animate-pulse"></div>
+  </div>
+  {/* Animated Background */}
+  <div className="fixed inset-0 -z-10">
+    <div className="absolute top-0 left-0 w-96 h-96 bg-cyan-500/20 blur-3xl rounded-full animate-pulse"></div>
+    <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-500/20 blur-3xl rounded-full animate-pulse"></div>
+    <div className="absolute top-1/2 left-1/2 w-[300px] h-[300px] bg-pink-500/10 blur-3xl rounded-full animate-bounce"></div>
+  </div>
+
+  {/* AI Cinematic Intro */}
+  <section className="relative h-screen flex items-center justify-center overflow-hidden border-b border-white/10">
+    <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 via-black to-purple-500/20"></div>
+
+    <div className="relative z-10 text-center space-y-8 animate-pulse px-6">
+      <h1 className="text-6xl md:text-8xl font-black tracking-[10px] bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+        ACCESSING HAMAD AI SYSTEM
+      </h1>
+
+      <div className="w-40 h-40 mx-auto rounded-full border-4 border-cyan-400 border-t-transparent animate-spin"></div>
+
+      <p className="text-2xl text-gray-300 tracking-widest">
+        AUTHENTICATION COMPLETE • WELCOME
+      </p>
+    </div>
+  </section>
+
+  {/* Floating Sidebar */}
+  <div className="fixed right-5 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-4">
+    {['GitHub', 'LinkedIn', 'WhatsApp', 'Instagram'].map((item, i) => (
+      <div
+        key={i}
+        className="w-14 h-14 rounded-2xl bg-white/10 border border-white/10 backdrop-blur-xl flex items-center justify-center hover:scale-110 hover:bg-cyan-500/20 transition duration-500 shadow-xl"
+      >
+        {item[0]}
+      </div>
+    ))}
+  </div>
+
+  {/* Navbar */}
+  <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/40 border-b border-white/10 shadow-2xl">
+    <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <h1 className="text-2xl font-extrabold tracking-widest bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+        HAMAD ALI
+      </h1>
+
+      <div className="hidden md:flex gap-8 text-sm font-semibold uppercase tracking-wider">
+        <a href="#home" className="hover:text-cyan-400 transition duration-300">Home</a>
+        <a href="#about" className="hover:text-cyan-400 transition duration-300">About</a>
+        <a href="#skills" className="hover:text-cyan-400 transition duration-300">Skills</a>
+        <a href="#education" className="hover:text-cyan-400 transition duration-300">Education</a>
+        <a href="#contact" className="hover:text-cyan-400 transition duration-300">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  {/* Hero Section */}
+  <section
+    id="home"
+    className="min-h-screen flex items-center justify-center px-6 pt-24"
+  >
+    <div className="grid lg:grid-cols-2 gap-16 items-center max-w-7xl w-full">
+
+      {/* Left Content */}
+      <div className="space-y-8 animate-fade-in">
+        <div className="inline-block px-4 py-2 rounded-full border border-cyan-400/40 bg-cyan-500/10 backdrop-blur-md">
+          <p className="text-cyan-300 tracking-widest uppercase text-sm">
+            AI Developer & Cybersecurity Enthusiast
+          </p>
+        </div>
+
+        <h1 className="text-5xl md:text-7xl font-black leading-tight">
+          Hi, I'm <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">HAMAD ALI</span>
+        </h1>
+
+        <p className="text-gray-300 text-lg leading-relaxed max-w-2xl">
+          Passionate student, future AI developer, and cybersecurity enthusiast with skills in Python, HTML, CSS, and JavaScript. Dedicated to creating elegant, modern, and intelligent digital experiences.
+        </p>
+
+        <div className="flex flex-wrap gap-5">
+          <a
+            href={whatsapp1}
+            target="_blank"
+            className="px-8 py-4 rounded-2xl bg-gradient-to-r from-green-400 to-green-600 text-black font-bold hover:scale-105 transition duration-500 shadow-2xl shadow-green-500/40"
+          >
+            WhatsApp 1
+          </a>
+
+          <a
+            href={whatsapp2}
+            target="_blank"
+            className="px-8 py-4 rounded-2xl border border-white/20 backdrop-blur-xl hover:bg-white/10 transition duration-500"
+          >
+            WhatsApp 2
+          </a>
+        </div>
+
+        {/* Floating Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 hover:-translate-y-2 transition duration-500">
+            <h2 className="text-3xl font-bold text-cyan-400">937</h2>
+            <p className="text-gray-400 text-sm">Matric Marks</p>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 hover:-translate-y-2 transition duration-500">
+            <h2 className="text-3xl font-bold text-purple-400">D.IT</h2>
+            <p className="text-gray-400 text-sm">Diploma</p>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 hover:-translate-y-2 transition duration-500">
+            <h2 className="text-3xl font-bold text-pink-400">11</h2>
+            <p className="text-gray-400 text-sm">Class</p>
+          </div>
+
+          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-5 hover:-translate-y-2 transition duration-500">
+            <h2 className="text-3xl font-bold text-yellow-400">4+</h2>
+            <p className="text-gray-400 text-sm">Tech Skills</p>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Image */}
+      <div className="relative flex justify-center items-center">
+        <div className="absolute w-[420px] h-[420px] bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+
+        <div className="relative backdrop-blur-2xl bg-white/5 border border-white/10 rounded-[40px] p-4 shadow-2xl hover:scale-105 transition duration-700">
+          <img
+            src="/mnt/data/file_000000006fa47208a9898f3cb910cbe8"
+            alt="Hamad Ali"
+            className="w-[380px] h-[520px] object-cover rounded-[30px]"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* About Section */}
+  <section id="about" className="py-28 px-6">
+    <div className="max-w-6xl mx-auto">
+      <div className="text-center mb-16">
+        <h2 className="text-5xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent inline-block">
+          ABOUT ME
+        </h2>
+        <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
+          A motivated student with a passion for technology, innovation, artificial intelligence, and modern web development.
+        </p>
+      </div>
+
+      <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-[1.02] transition duration-500 shadow-xl">
+          <h3 className="text-2xl font-bold mb-5 text-cyan-400">Personal Information</h3>
+          <div className="space-y-4 text-gray-300">
+            <p><span className="font-bold text-white">Name:</span> HAMAD ALI</p>
+            <p><span className="font-bold text-white">Father Name:</span> IMDAD ALI</p>
+            <p><span className="font-bold text-white">Class:</span> 11</p>
+            <p><span className="font-bold text-white">Address:</span> Charsadda Road Bakhshi Pul Peshawar New Ghari Murad Colony</p>
+          </div>
+        </div>
+
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-[1.02] transition duration-500 shadow-xl">
+          <h3 className="text-2xl font-bold mb-5 text-purple-400">Languages</h3>
+          <div className="flex flex-wrap gap-4">
+            <span className="px-5 py-3 rounded-full bg-cyan-500/20 border border-cyan-400/20">Urdu</span>
+            <span className="px-5 py-3 rounded-full bg-purple-500/20 border border-purple-400/20">English</span>
+            <span className="px-5 py-3 rounded-full bg-pink-500/20 border border-pink-400/20">Pashto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Skills */}
+  <section id="skills" className="py-28 px-6 bg-white/5 backdrop-blur-xl border-y border-white/10">
+    <div className="max-w-6xl mx-auto text-center">
+      <h2 className="text-5xl font-black mb-16 bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent inline-block">
+        TECH SKILLS
+      </h2>
+
+      <div className="grid md:grid-cols-4 gap-8">
+        {[
+          "Python",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ].map((skill, index) => (
+          <div
+            key={index}
+            className="group bg-black/40 border border-white/10 rounded-3xl p-10 hover:-translate-y-4 hover:border-cyan-400/40 transition duration-700 shadow-2xl"
+          >
+            <div className="text-6xl mb-5 group-hover:rotate-12 transition duration-500">
+              ⚡
+            </div>
+            <h3 className="text-2xl font-bold">{skill}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Education */}
+  <section id="education" className="py-28 px-6">
+    <div className="max-w-5xl mx-auto">
+      <h2 className="text-center text-5xl font-black mb-16 bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent">
+        EDUCATION & ACHIEVEMENTS
+      </h2>
+
+      <div className="space-y-8">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-[1.02] transition duration-500">
+          <h3 className="text-2xl font-bold text-cyan-400">Matric</h3>
+          <p className="text-gray-300 mt-2">Obtained 937 Marks with dedication and hard work.</p>
+        </div>
+
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-[1.02] transition duration-500">
+          <h3 className="text-2xl font-bold text-purple-400">Diploma in D.IT</h3>
+          <p className="text-gray-300 mt-2">Completed Diploma in Information Technology with practical computer skills.</p>
+        </div>
+
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-xl hover:scale-[1.02] transition duration-500">
+          <h3 className="text-2xl font-bold text-pink-400">Future Goal</h3>
+          <p className="text-gray-300 mt-2">To become a successful AI Developer and Cybersecurity Expert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* AI Intro Animation Section */}
+  <section className="py-28 px-6 bg-gradient-to-b from-black to-gray-950 border-y border-white/10">
+    <div className="max-w-6xl mx-auto text-center">
+      <h2 className="text-5xl font-black mb-10 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent inline-block">
+        AI INTRODUCTION
+      </h2>
+
+      <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-white/5 backdrop-blur-2xl p-10 shadow-2xl">
+        <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 animate-pulse"></div>
+
+        <div className="relative z-10 space-y-8">
+          <div className="w-36 h-36 mx-auto rounded-full overflow-hidden border-4 border-cyan-400 shadow-2xl shadow-cyan-500/40 animate-bounce">
+            <img
+              src="/mnt/data/file_000000006fa47208a9898f3cb910cbe8"
+              alt="Hamad Ali"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <h3 className="text-4xl font-black bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            HAMAD ALI
+          </h3>
+
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            Future AI Developer, Cybersecurity Enthusiast, and Creative Web Designer passionate about modern technology, innovation, and elegant digital experiences.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-6 mt-10">
+            <div className="rounded-3xl border border-cyan-400/20 bg-cyan-500/10 p-6 hover:scale-105 transition duration-500">
+              <h4 className="text-2xl font-bold text-cyan-300">AI Developer</h4>
+              <p className="text-gray-400 mt-3">Building future intelligent systems and modern AI applications.</p>
+            </div>
+
+            <div className="rounded-3xl border border-purple-400/20 bg-purple-500/10 p-6 hover:scale-105 transition duration-500">
+              <h4 className="text-2xl font-bold text-purple-300">Cybersecurity</h4>
+              <p className="text-gray-400 mt-3">Learning ethical hacking and advanced digital protection skills.</p>
+            </div>
+
+            <div className="rounded-3xl border border-pink-400/20 bg-pink-500/10 p-6 hover:scale-105 transition duration-500">
+              <h4 className="text-2xl font-bold text-pink-300">Web Designer</h4>
+              <p className="text-gray-400 mt-3">Creating elegant animated websites with premium user experiences.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Contact */}
+  <section id="contact" className="py-28 px-6">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-5xl font-black mb-10 bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent inline-block">
+        CONTACT ME
+      </h2>
+
+      <div className="bg-white/5 border border-white/10 backdrop-blur-xl rounded-[40px] p-10 shadow-2xl">
+        <div className="space-y-5 text-lg text-gray-300">
+          <p>📞 03179518826</p>
+          <p>📞 033350955663</p>
+          <p>📍 Charsadda Road Bakhshi Pul Peshawar New Ghari Murad Colony</p>
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-5 mt-10">
+          <a
+            href={whatsapp1}
+            target="_blank"
+            className="px-8 py-4 rounded-2xl bg-gradient-to-r from-green-400 to-green-600 text-black font-bold hover:scale-110 transition duration-500 shadow-2xl"
+          >
+            Chat on WhatsApp
+          </a>
+
+          <button className="px-8 py-4 rounded-2xl border border-cyan-400/30 bg-cyan-500/10 hover:bg-cyan-500/20 transition duration-500">
+            Download CV
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="border-t border-white/10 py-8 text-center text-gray-500 backdrop-blur-xl bg-black/30">
+    <p>
+      © 2026 HAMAD ALI | Ultra Premium AI Portfolio • GitHub Ready • Responsive • Animated
+    </p>
+        {/* Interactive Terminal */}
+  <section className="py-28 px-6 bg-black border-t border-white/10">
+    <div className="max-w-5xl mx-auto rounded-[40px] overflow-hidden border border-green-500/20 shadow-2xl bg-[#050505]">
+      <div className="bg-green-500/10 px-6 py-4 border-b border-green-500/20 flex items-center gap-3">
+        <div className="w-4 h-4 rounded-full bg-red-500"></div>
+        <div className="w-4 h-4 rounded-full bg-yellow-500"></div>
+        <div className="w-4 h-4 rounded-full bg-green-500"></div>
+        <span className="ml-4 text-green-300 font-mono">hamad@ai-terminal</span>
+      </div>
+
+      <div className="p-8 font-mono space-y-4 text-green-400 text-lg">
+        <p>$ initializing system...</p>
+        <p>$ loading developer profile...</p>
+        <p>$ commands available:</p>
+        {commands.map((cmd, i) => (
+          <p key={i} className="hover:translate-x-2 transition duration-300">➜ {cmd}</p>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Holographic Certificates */}
+  <section className="py-28 px-6 bg-gradient-to-b from-gray-950 to-black border-t border-white/10">
+    <div className="max-w-7xl mx-auto text-center">
+      <h2 className="text-5xl font-black mb-16 bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent inline-block">
+        CERTIFICATES & ACHIEVEMENTS
+      </h2>
+
+      <div className="grid md:grid-cols-3 gap-8">
+        {['D.IT Diploma', 'Matric Achievement', 'Future AI Certifications'].map((cert, i) => (
+          <div
+            key={i}
+            className="group relative overflow-hidden rounded-[35px] border border-white/10 bg-white/5 backdrop-blur-xl p-10 hover:rotate-1 hover:-translate-y-4 transition duration-700 shadow-2xl"
+          >
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-r from-cyan-500/20 to-purple-500/20"></div>
+
+            <div className="relative z-10">
+              <div className="text-6xl mb-5">🏆</div>
+              <h3 className="text-3xl font-black">{cert}</h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* Premium Features Section */}
+  <section className="py-32 px-6 bg-gradient-to-b from-black to-gray-950 border-t border-white/10">
+    <div className="max-w-7xl mx-auto text-center">
+      <h2 className="text-6xl font-black mb-6 bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent inline-block animate-pulse">
+        NEXT LEVEL FEATURES
+      </h2>
+
+      <p className="text-gray-400 max-w-3xl mx-auto text-lg leading-relaxed mb-20">
+        Advanced futuristic upgrades with AI visuals, elegant animations, premium interactions, and modern developer aesthetics.
+      </p>
+
+      {/* Typing Animation */}
+      <div className="mb-20">
+        <h3 className="text-4xl md:text-6xl font-black tracking-wide text-white">
+          <span className="border-r-4 border-cyan-400 pr-3 animate-pulse">
+            AI Developer | Cybersecurity Enthusiast | Web Designer
+          </span>
+        </h3>
+      </div>
+
+      {/* Skills Progress */}
+      <div className="grid md:grid-cols-2 gap-8 text-left mb-24">
+        {[
+          { name: 'Python', level: '90%' },
+          { name: 'HTML', level: '95%' },
+          { name: 'CSS', level: '90%' },
+          { name: 'JavaScript', level: '80%' },
+        ].map((skill, i) => (
+          <div key={i} className="bg-white/5 rounded-3xl border border-white/10 p-8 backdrop-blur-xl hover:scale-[1.02] transition duration-500">
+            <div className="flex justify-between mb-4">
+              <span className="font-bold text-xl">{skill.name}</span>
+              <span className="text-cyan-400 font-bold">{skill.level}</span>
+            </div>
+
+            <div className="w-full h-4 bg-gray-800 rounded-full overflow-hidden">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-pulse"
+                style={{ width: skill.level }}
+              ></div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Project Cards */}
+      <div className="grid lg:grid-cols-3 gap-8 mb-24">
+        {[
+          'AI Assistant Project',
+          'Cybersecurity Toolkit',
+          'Animated Portfolio Website',
+        ].map((project, index) => (
+          <div
+            key={index}
+            className="group relative overflow-hidden rounded-[35px] border border-white/10 bg-white/5 backdrop-blur-xl p-10 hover:-translate-y-4 transition duration-700 shadow-2xl"
+          >
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-r from-cyan-500/20 to-purple-500/20"></div>
+
+            <div className="relative z-10">
+              <div className="text-6xl mb-6">🚀</div>
+              <h3 className="text-3xl font-black mb-4">{project}</h3>
+              <p className="text-gray-400 leading-relaxed">
+                Premium futuristic project design with advanced animations, modern technologies, and elegant UI/UX experience.
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Timeline */}
+      <div className="mb-24">
+        <h3 className="text-5xl font-black mb-14 bg-gradient-to-r from-yellow-400 to-pink-500 bg-clip-text text-transparent inline-block">
+          JOURNEY TIMELINE
+        </h3>
+
+        <div className="space-y-10 max-w-4xl mx-auto text-left">
+          {[
+            'Completed Matric with 937 Marks',
+            'Started Diploma in D.IT',
+            'Learned HTML, CSS, JavaScript & Python',
+            'Future Goal: AI Developer & Cybersecurity Expert',
+          ].map((item, i) => (
+            <div key={i} className="flex items-center gap-6 group">
+              <div className="w-6 h-6 rounded-full bg-gradient-to-r from-cyan-400 to-purple-500 animate-ping"></div>
+              <div className="flex-1 bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-xl group-hover:translate-x-3 transition duration-500">
+                <p className="text-lg text-gray-300">{item}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* AI Avatar Section */}
+      <div className="relative overflow-hidden rounded-[40px] border border-white/10 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-xl p-12 shadow-2xl mb-24">
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_rgba(0,255,255,0.3),transparent_70%)] animate-pulse"></div>
+
+        <div className="relative z-10">
+          <h3 className="text-5xl font-black mb-8 bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent">
+            HAMAD AI SYSTEM
+          </h3>
+
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6 text-left">
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Advanced futuristic developer portfolio powered with elegant animations, intelligent layouts, cyberpunk aesthetics, and AI-inspired visual experiences.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <span className="px-5 py-3 rounded-full bg-cyan-500/20 border border-cyan-400/20">Artificial Intelligence</span>
+                <span className="px-5 py-3 rounded-full bg-purple-500/20 border border-purple-400/20">Cybersecurity</span>
+                <span className="px-5 py-3 rounded-full bg-pink-500/20 border border-pink-400/20">Full Stack Learning</span>
+              </div>
+            </div>
+
+            <div className="relative flex justify-center">
+              <div className="absolute w-72 h-72 rounded-full bg-cyan-500/30 blur-3xl animate-pulse"></div>
+
+              <img
+                src="/mnt/data/file_000000006fa47208a9898f3cb910cbe8"
+                className="relative z-10 w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl shadow-cyan-500/40 hover:scale-105 transition duration-700"
+                alt="Hamad AI"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Premium Loader */}
+      <div className="rounded-[40px] border border-white/10 bg-black/40 backdrop-blur-xl p-12 shadow-2xl">
+        <div className="flex justify-center mb-8">
+          <div className="w-24 h-24 rounded-full border-4 border-cyan-400 border-t-transparent animate-spin"></div>
+        </div>
+
+        <h3 className="text-4xl font-black tracking-widest bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+          INITIALIZING HAMAD AI SYSTEM...
+        </h3>
+      </div>
+    </div>
+  </section>
+
+  </footer>
+
+  {/* Design Preview */}
+  <div className="py-20 px-6 border-t border-white/10 bg-black">
+    <div className="max-w-6xl mx-auto">
+      <h2 className="text-4xl font-black text-center mb-10 bg-gradient-to-r from-cyan-400 to-pink-500 bg-clip-text text-transparent">
+        WEBSITE DESIGN PREVIEW
+      </h2>
+
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="h-60 rounded-3xl bg-gradient-to-br from-cyan-500/30 to-blue-500/10 border border-white/10 backdrop-blur-xl flex items-center justify-center text-2xl font-bold hover:scale-105 transition duration-500">
+          Animated Hero Section
+        </div>
+
+        <div className="h-60 rounded-3xl bg-gradient-to-br from-purple-500/30 to-pink-500/10 border border-white/10 backdrop-blur-xl flex items-center justify-center text-2xl font-bold hover:scale-105 transition duration-500">
+          Glassmorphism Panels
+        </div>
+
+        <div className="h-60 rounded-3xl bg-gradient-to-br from-green-500/30 to-cyan-500/10 border border-white/10 backdrop-blur-xl flex items-center justify-center text-2xl font-bold hover:scale-105 transition duration-500">
+          Premium Animations
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+); }
